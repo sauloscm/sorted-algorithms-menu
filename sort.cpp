@@ -181,7 +181,7 @@ int main(int argc, char* argv[]) {
 // Open the output file for writing
 std::ofstream outputFile("sorted.txt");
 if (!outputFile) {
-    std::cerr << "Failed to open output file: output.txt" << std::endl;
+    std::cerr << "Failed to open output file: sorted.txt" << std::endl;
     return 1;
 }
 
@@ -212,11 +212,11 @@ for (int i = 1; i < argc; i++) {
     std::chrono::high_resolution_clock::time_point endTime = std::chrono::high_resolution_clock::now();
     double elapsedTime = std::chrono::duration<double>(endTime - startTime).count();
 
-    outputFile << "Sorted numbers for file: " << argv[i] << ":" << std::endl;
+    outputFile << "Numeros ordenados por arquivos: " << argv[i] << ":" << std::endl;
     for (int j = 0; j < numbers.size(); j++) {
         outputFile << numbers[j] << std::endl;
     }
-    outputFile << "Elapsed time: " << elapsedTime << " seconds." << std::endl;
+    outputFile << "Tempo decorrido: " << elapsedTime << " segundos." << std::endl;
 }
 
 outputFile.close();
