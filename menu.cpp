@@ -128,26 +128,32 @@ std::cout << "Enter your choice (1-5): ";
 }
 
 void sortNumbers(std::vector<int>& numbers, int choice) {
-switch (choice) {
-case 1:
-selectionSort(numbers);
-break;
-case 2:
-bubbleSort(numbers);
-break;
-case 3:
-insertionSort(numbers);
-break;
-case 4:
-mergeSort(numbers, 0, numbers.size() - 1);
-break;
-case 5:
-quickSort(numbers, 0, numbers.size() - 1);
-break;
-default:
-std::cout << "Invalid choice!" << std::endl;
-return;
-}
+    switch (choice) {
+        case 1:
+            selectionSort(numbers);
+            std::cout << "Algoritmo selecionado: Selection Sort" << std::endl;
+            break;
+        case 2:
+            bubbleSort(numbers);
+            std::cout << "Algoritmo selecionado: Bubble Sort" << std::endl;
+            break;
+        case 3:
+            insertionSort(numbers);
+            std::cout << "Algoritmo selecionado: Insertion Sort" << std::endl;
+            break;
+        case 4:
+            mergeSort(numbers, 0, numbers.size() - 1);
+            std::cout << "Algoritmo selecionado: Merge Sort" << std::endl;
+            break;
+        case 5:
+            quickSort(numbers, 0, numbers.size() - 1);
+            std::cout << "Algoritmo selecionado: Quick Sort" << std::endl;
+            break;
+        default:
+            std::cout << "Escolha inválida!" << std::endl;
+            return;
+    }
+
 std::cout << "Instancia numerica ordenada com sucesso!"<< std::endl;
 std::cout << "verifique o arquivo sorted.txt"<< std::endl;
 }
