@@ -39,7 +39,5 @@ Os seguintes arquivos de números inteiros estão disponíveis para teste:
 - num.100000.2.in
 - num.100000.3.in
 
-## Licença
 
-Este projeto está licenciado sob a [MIT License](LICENSE).
 
