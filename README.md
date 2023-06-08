@@ -17,7 +17,7 @@ O programa implementa os seguintes algoritmos de ordenação:
 1. Compile o programa executando o seguinte comando no terminal:
 
 
-2. Execute o programa, fornecendo o nome do arquivo a ser ordenado como argumento. Por exemplo:./menu num.1000.1.in
+2. Execute o programa, fornecendo o nome do arquivo a ser ordenado como argumento. Por exemplo:./sort num.1000.1.in
 
 O programa irá exibir um menu com as opções de algoritmos de ordenação. Escolha o número correspondente ao algoritmo desejado e pressione Enter.
 
